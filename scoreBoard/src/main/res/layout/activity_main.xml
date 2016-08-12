@@ -1,0 +1,334 @@
+<LinearLayout android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_gravity="center_vertical"
+tools:context="es.maps.scoreboard.app.ScoreBoardActivity">
+
+<RelativeLayout
+    android:id="@+id/controlLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:id="@+id/homeLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/home1LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton android:id="@+id/home1Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball1"
+                android:layout_gravity="center"
+                android:tag="1" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:layout_marginRight="5dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/home1"/>
+
+            <TextView
+                android:id="@+id/homeShotsIn1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home2LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton android:id="@+id/home2Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball2"
+                android:layout_gravity="center"
+                android:tag="2" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:layout_marginRight="5dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/home2"/>
+
+            <TextView
+                android:id="@+id/homeShotsIn2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home3LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton android:id="@+id/home3Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball3"
+                android:layout_gravity="center"
+                android:tag="3" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:layout_marginRight="5dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/home3"/>
+
+
+            <TextView
+                android:id="@+id/homeShotsIn3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/visitorLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/visitor1LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/visitorShotsIn1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+
+            <ImageButton android:id="@+id/visitor1Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball1"
+                android:layout_gravity="center"
+                android:tag="11" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/visitor1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visitor2LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/visitorShotsIn2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+
+            <ImageButton android:id="@+id/visitor2Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball2"
+                android:layout_gravity="center"
+                android:tag="12" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/visitor2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visitor3LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/visitorShotsIn3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FF222222"
+                android:padding="5dp"
+                android:text="@string/empty2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp"
+                android:textStyle="bold" android:layout_marginBottom="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:gravity="center" android:width="50dp" android:textColor="#FF20E000"/>
+
+            <ImageButton android:id="@+id/visitor3Button"
+                android:onClick="onClickPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basketball3"
+                android:layout_gravity="center"
+                android:tag="13" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp"
+                android:contentDescription="@string/visitor3"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/resultLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical" android:layout_weight="1" android:layout_gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/totalRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/homeTotalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/empty3"
+            android:background="@drawable/borde3"
+            android:textColor="#FFFFF000" android:textSize="70sp" android:textStyle="bold" android:layout_marginBottom="20dp" android:layout_marginTop="20dp" android:width="140dp" android:gravity="center" android:padding="5dp"/>
+        <TextView
+            android:id="@+id/visitorTotalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:text="@string/empty3"
+            android:background="@drawable/borde3" android:textColor="#FFFFF000" android:textSize="70sp" android:textStyle="bold" android:layout_gravity="center" android:layout_marginBottom="20dp" android:layout_marginTop="20dp" android:width="140dp" android:gravity="center" android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/partialLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/homePartialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/borde3"
+            android:text="@string/empty2"
+            android:textColor="#FFFFF000"
+            android:textSize="50sp"
+            android:textStyle="bold" android:gravity="center" android:width="80dp" android:layout_gravity="center_vertical" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:paddingLeft="5dp" android:paddingRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/periodDownButton"
+            android:onClick="onClickPeriodDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/previous" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="3dp"
+            android:contentDescription="@string/periodDown"/>
+
+        <TextView
+            android:id="@+id/currentPeriodTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/empty1"
+            android:layout_gravity="center_vertical|center_horizontal" android:background="@drawable/rounded_corners" android:textSize="50sp" android:layout_weight="1" android:textColor="#FFFFF000" android:textStyle="bold" android:gravity="center" android:padding="5dp" android:layout_marginTop="15dp" android:width="40dp" android:minWidth="40dp" android:layout_marginBottom="15dp"/>
+
+        <ImageButton
+            android:id="@+id/periodUpButton"
+            android:onClick="onClickPeriodUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next" android:layout_marginRight="10dp" android:layout_marginLeft="3dp" android:layout_marginTop="5dp"
+            android:contentDescription="@string/periodUp"/>
+
+        <TextView
+            android:id="@+id/visitorPartialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde3"
+            android:text="@string/empty2"
+            android:textColor="#FFFFF000"
+            android:textSize="50sp"
+            android:textStyle="bold" android:layout_marginRight="5dp" android:gravity="center" android:width="80dp" android:layout_gravity="center_vertical" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:paddingLeft="5dp" android:paddingRight="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/botonsRelativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+
+    <ImageButton
+        android:id="@+id/undoButton"
+        android:onClick="onClickUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/undo"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="bottom|left"
+        android:contentDescription="@string/undo"/>
+
+    <ImageButton
+        android:id="@+id/redoButton"
+        android:onClick="onClickRedo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/redo"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp" android:layout_gravity="bottom"
+        android:contentDescription="@string/redo"/>
+
+    <ImageButton
+        android:id="@+id/resetButton"
+        android:onClick="onClickReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/reset"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/reset"/>
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:onClick="onClickExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="bottom|right" android:layout_marginLeft="5dp"
+        android:contentDescription="@string/exit"/>
+
+</LinearLayout>
+
+</LinearLayout>

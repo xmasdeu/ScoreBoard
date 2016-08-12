@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="noMediaString">No media present!</string>
+    <string name="app_name">ScoreBoard</string>
+    <string name="home1">Suma 1 punt</string>
+    <string name="home2">Suma 2 punts</string>
+    <string name="home3">Suma 3 punts</string>
+    <string name="visitor1">Suma 1 punt</string>
+    <string name="visitor2">Suma 2 punts</string>
+    <string name="visitor3">Suma 3 punts</string>
+    <string name="empty1">8</string>
+    <string name="empty2">88</string>
+    <string name="empty3">888</string>
+    <string name="periodDown">Periode menys</string>
+    <string name="periodUp">Periode més</string>
+    <string name="undo">Desfer</string>
+    <string name="redo">Refer</string>
+    <string name="reset">Posar a zero</string>
+    <string name="sure">Està segur?</string>
+    <string name="exit">Sortir</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+</resources>
